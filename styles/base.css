@@ -1,0 +1,165 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9f0;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background-color: #1e3d58;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header .highlight {
+  display: block;
+  color: #f6c90e;
+  font-weight: 600;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2b2b2b;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #f6c90e;
+  border-bottom: 2px solid #f6c90e;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.card h2 {
+  background-color: #1e3d58;
+  color: white;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.1rem;
+}
+
+/* ABOUT SECTION */
+.about .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about .text {
+  flex: 1 1 55%;
+}
+
+.about .photo {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about .photo img {
+  width: 200px;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* FLAG + PARAGRAPH */
+.flag-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.flag-info figure {
+  margin: 0;
+  text-align: center;
+}
+
+.flag-info figure img {
+  width: 150px; /* bigger flag */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.flag-info figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.flag-info p {
+  font-size: 0.9rem; /* smaller text beside flag */
+  margin: 0;
+}
+
+/* RESOURCES */
+.resources ul {
+  list-style: disc inside;
+  padding: 1.2rem;
+}
+
+.resources li {
+  margin: 0.5rem 0;
+}
+
+.resources a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1e3d58;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#lastModified {
+  color: #a5ff89;
+}
