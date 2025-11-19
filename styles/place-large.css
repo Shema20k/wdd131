@@ -1,33 +1,50 @@
 @media (min-width: 720px) {
+
   :root {
-    --max-width: 900px;
+    --max-width: 1000px; /* wider layout for desktop */
   }
 
+  /* Two-column layout */
   main.container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    gap: 40px;
   }
 
+  /* Hero spans full width */
   .hero {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     margin-bottom: 40px;
   }
 
+  /* Right-hand column stacked cards */
   .info-column {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
+  /* Weather icon sizing */
   .weather-svg {
     width: 50px;
-    margin: 10px auto;
+    margin: 10px auto 20px;
+    display: block;
   }
 
+  /* Pseudo-element for wide view weather heading */
   .weather-heading::after {
-    content: " ⛅"; 
+    content: " ⛅";
     font-size: 1.2rem;
     margin-left: 6px;
+  }
+
+  /* Cards padding adjustments */
+  .data-card,
+  .weather-card {
+    padding: 30px;
+  }
+
+  .hero img {
+    border-radius: 10px;
   }
 }
