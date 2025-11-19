@@ -23,10 +23,18 @@
 
 <main class="container">
 
+  <!-- Hero Section with responsive image -->
   <section class="hero">
-    <img src="images/images.webp" 
-         alt="A mountain gorilla in Volcanoes National Park, Rwanda"
-         class="hero-img">
+    <picture>
+      <!-- Mobile -->
+      <source media="(max-width: 720px)" srcset="images/images-400.webp">
+      <!-- Tablet -->
+      <source media="(max-width: 1200px)" srcset="images/images-800.webp">
+      <!-- Desktop / default -->
+      <img src="images/images-1200.webp" 
+           alt="A mountain gorilla in Volcanoes National Park, Rwanda" 
+           class="hero-img">
+    </picture>
   </section>
 
   <section class="info-column">
