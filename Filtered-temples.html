@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Shema Darcy | Course: WDD 131" />
+  <meta name="description" content="Interactive web album of LDS Temples with filters and lazy loading." />
+  <title>Filtered Temple Album</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button class="hamburger" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    <nav id="site-navigation" class="nav-menu" aria-label="Main navigation">
+      <button id="home" class="filter-btn" aria-pressed="true">Home</button>
+      <button id="old" class="filter-btn" aria-pressed="false">Old</button>
+      <button id="new" class="filter-btn" aria-pressed="false">New</button>
+      <button id="large" class="filter-btn" aria-pressed="false">Large</button>
+      <button id="small" class="filter-btn" aria-pressed="false">Small</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="current-filter">Home</h2>
+    <section id="temple-container" class="gallery" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Shema Darcy | Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
