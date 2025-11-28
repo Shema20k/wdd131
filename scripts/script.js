@@ -1,8 +1,8 @@
 const products = [
-    { id: "p1", name: "Smartphone X" },
-    { id: "p2", name: "Laptop Y" },
-    { id: "p3", name: "Headphones Z" },
-    { id: "p4", name: "Smartwatch W" }
+    { id: "p1", name: "Smartphones" },
+    { id: "p2", name: "Laptops" },
+    { id: "p3", name: "Headphones" },
+    { id: "p4", name: "Smartwatches" }
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
