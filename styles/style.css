@@ -70,3 +70,14 @@ legend {
 span {
     color: red;
 }
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

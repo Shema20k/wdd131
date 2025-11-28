@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description" content="Submit your review for our products. Rate, comment, and share your feedback.">
+    <meta name="author" content="Shema Darcy">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js"></script>
 </head>
@@ -21,11 +23,11 @@
 
             <fieldset>
                 <legend>Overall Rating <span>*</span></legend>
-                <label><input type="radio" name="rating" id="star1" value="1" required> ☆ 1</label>
-                <label><input type="radio" name="rating" id="star2" value="2"> ☆ 2</label>
-                <label><input type="radio" name="rating" id="star3" value="3"> ☆ 3</label>
-                <label><input type="radio" name="rating" id="star4" value="4"> ☆ 4</label>
-                <label><input type="radio" name="rating" id="star5" value="5"> ☆ 5</label>
+                <label for="star1"><input type="radio" name="rating" id="star1" value="1" required> ☆ 1</label>
+                <label for="star2"><input type="radio" name="rating" id="star2" value="2" required> ☆ 2</label>
+                <label for="star3"><input type="radio" name="rating" id="star3" value="3" required> ☆ 3</label>
+                <label for="star4"><input type="radio" name="rating" id="star4" value="4" required> ☆ 4</label>
+                <label for="star5"><input type="radio" name="rating" id="star5" value="5" required> ☆ 5</label>
             </fieldset>
 
             <label for="installDate">Date of Installation <span>*</span></label>
@@ -33,10 +35,10 @@
 
             <fieldset>
                 <legend>Useful Features</legend>
-                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
-                <label><input type="checkbox" name="features" value="Design"> Design</label>
-                <label><input type="checkbox" name="features" value="Value for Money"> Value for Money</label>
+                <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Ease of Use"> Ease of Use</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="features" value="Durability"> Durability</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="features" value="Design"> Design</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="features" value="Value for Money"> Value for Money</label>
             </fieldset>
 
             <label for="review">Written Review</label>
@@ -50,7 +52,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Company Name</p>
+        <p>&copy; 2025 Shema Darcy</p>
     </footer>
 
 </body>
